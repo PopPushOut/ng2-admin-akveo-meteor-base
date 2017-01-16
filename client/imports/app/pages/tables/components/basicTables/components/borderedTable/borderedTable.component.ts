@@ -1,10 +1,10 @@
 import {Component} from '@angular/core';
-
+import template from './borderedTable.html';
 import {BasicTablesService} from '../../basicTables.service';
 
 @Component({
   selector: 'bordered-table',
-  template: require('./borderedTable.html'),
+  template
 })
 export class BorderedTable {
 

@@ -1,9 +1,10 @@
 import {Component} from '@angular/core';
-
+import template from './inlineForm.html';
+import style from './inlineForm.scss';
 @Component({
   selector: 'inline-form',
-  styles: [require('./inlineForm.scss')],
-  template: require('./inlineForm.html'),
+  styles: [style],
+  template
 })
 export class InlineForm {
 

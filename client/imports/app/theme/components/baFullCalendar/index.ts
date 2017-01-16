@@ -1,1 +1,1 @@
-export * from './baFullCalendar.component';
+//export * from './baFullCalendar.component';

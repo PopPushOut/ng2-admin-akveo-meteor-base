@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
-
+import template from './contextualTable.html';
 @Component({
   selector: 'contextual-table',
-  template: require('./contextualTable.html'),
+  template
 })
 export class ContextualTable {
 

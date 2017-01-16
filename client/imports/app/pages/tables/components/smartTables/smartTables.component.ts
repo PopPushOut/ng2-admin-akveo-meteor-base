@@ -3,11 +3,13 @@ import {Component, ViewEncapsulation} from '@angular/core';
 import { SmartTablesService } from './smartTables.service';
 import { LocalDataSource } from 'ng2-smart-table';
 
+import style from './smartTables.scss';
+import template from './smartTables.html';
 @Component({
   selector: 'basic-tables',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./smartTables.scss')],
-  template: require('./smartTables.html')
+  styles: [style],
+  template
 })
 export class SmartTables {
 

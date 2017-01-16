@@ -1,20 +1,21 @@
-import './app.loader.ts';
+//import './app.loader.ts';
 import { Component, ViewEncapsulation, ViewContainerRef } from '@angular/core';
-import template from "./app.component.html";
 import { GlobalState } from './global.state';
 import { BaImageLoaderService, BaThemePreloader, BaThemeSpinner } from './theme/services';
 import { layoutPaths } from './theme/theme.constants';
 import { BaThemeConfig } from './theme/theme.config';
+import style from './app.scss';
+import template from './app.component.html';
+
 
 @Component({
   selector: "app",
   encapsulation: ViewEncapsulation.None,
-  template: require('./app.component.html'),
-  styles: [require('normalize.css'), require('./app.scss')]
+  template,
+  styles: [style]
 })
 export class AppComponent {
-  isMenuCollapsed: boolean = false;
-
+  isMenuCollapsed: boolean = true;
   constructor(private _state: GlobalState,
               private _imageLoader: BaImageLoaderService,
               private _spinner: BaThemeSpinner,
@@ -22,13 +23,13 @@ export class AppComponent {
               private viewContainerRef: ViewContainerRef) {
 
     this._loadImages();
-
+    console.log("app constructor!");
     this._state.subscribe('menu.isCollapsed', (isCollapsed) => {
       this.isMenuCollapsed = isCollapsed;
     });
   }
-
   public ngAfterViewInit(): void {
+    console.log("as cia");
     // hide spinner once all loaders are completed
     BaThemePreloader.load().then((values) => {
       this._spinner.hide();

@@ -1,29 +1,29 @@
 import { Routes, RouterModule }  from '@angular/router';
 import { Pages } from './pages.component';
-import { System } from '../../../custom-typings'
+
 // noinspection TypeScriptValidateTypes
 const routes: Routes = [
   {
     path: 'login',
-    loadChildren: () => System.import('./login/login.module')
+    loadChildren: 'login/login.module'
   },
   {
     path: 'register',
-    loadChildren: () => System.import('./register/register.module')
+    loadChildren: 'register/register.module'
   },
   {
     path: 'pages',
     component: Pages,
     children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-      { path: 'dashboard', loadChildren: () => System.import('./dashboard/dashboard.module') },
-      { path: 'editors', loadChildren: () => System.import('./editors/editors.module') },
-      { path: 'components', loadChildren: () => System.import('./components/components.module') },
-      { path: 'charts', loadChildren: () => System.import('./charts/charts.module') },
-      { path: 'ui', loadChildren: () => System.import('./ui/ui.module') },
-      { path: 'forms', loadChildren: () => System.import('./forms/forms.module') },
-      { path: 'tables', loadChildren: () => System.import('./tables/tables.module') },
-      { path: 'maps', loadChildren: () => System.import('./maps/maps.module') }
+      { path: 'dashboard', loadChildren: 'dashboard/dashboard.module' },
+      //{ path: 'editors', loadChildren: './editors/editors.module' },
+      //{ path: 'components', loadChildren: 'components/components.module' },
+      { path: 'ui', loadChildren: 'ui/ui.module' }
+      //{ path: 'forms', loadChildren: 'forms/forms.module' },
+      //{ path: 'tables', loadChildren: 'da./tables/tables.module' },
+      //{ path: 'maps', loadChildren: 'maps/maps.module' },
+      //{ path: 'charts', loadChildren: './charts/charts.module' }
     ]
   }
 ];

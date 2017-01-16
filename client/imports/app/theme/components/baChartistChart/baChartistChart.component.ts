@@ -11,14 +11,17 @@ import {
     OnDestroy,
 } from '@angular/core';
 
-import {Chartist} from './baChartistChart.loader';
+//import {Chartist} from './baChartistChart.loader';
 
+import style from './baChartistChart.scss';
+//import styleCss from 'chartist/dist/chartist.css';
+import template from './baChartistChart.html';
 @Component({
   selector: 'ba-chartist-chart',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('chartist/dist/chartist.css'), require('./baChartistChart.scss')],
-  template: require('./baChartistChart.html'),
-  providers: [],
+  styles: [style], //removed styleCss
+  template,
+  providers: []
 })
 export class BaChartistChart {
 

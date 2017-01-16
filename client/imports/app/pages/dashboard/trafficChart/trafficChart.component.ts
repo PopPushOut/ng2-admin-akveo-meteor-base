@@ -1,13 +1,15 @@
 import {Component, ViewEncapsulation, ElementRef} from '@angular/core';
-import { jQuery } from '../../../../../custom-typings';
+//import { jQuery } from 'jquery';
 import {Chart} from './trafficChart.loader';
 import {TrafficChartService} from './trafficChart.service';
 
+import style from './trafficChart.scss';
+import template from './trafficChart.html';
 @Component({
   selector: 'traffic-chart',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./trafficChart.scss')],
-  template: require('./trafficChart.html')
+  styles: [style],
+  template
 })
 
 // TODO: move chart.js to it's own component

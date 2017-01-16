@@ -1,10 +1,10 @@
 import {Component, ViewChild, ViewEncapsulation, Input, Output, ElementRef, EventEmitter} from '@angular/core';
-import { jQuery } from '../../../../../custom-typings';
+//import { jQuery } from 'jquery';
 import './baFullCalendar.loader.ts';
-
+import template from './baFullCalendar.html';
 @Component({
   selector: 'ba-full-calendar',
-  template: require('./baFullCalendar.html'),
+  template,
   encapsulation: ViewEncapsulation.None,
 })
 export class BaFullCalendar {

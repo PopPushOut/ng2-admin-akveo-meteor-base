@@ -14,9 +14,9 @@ import {
 import {
   //BaAmChart,
   BaBackTop,
-  //BaCard,
+  BaCard,
   //BaChartistChart,
-  //BaCheckbox,
+  BaCheckbox,
   BaContentTop,
   //BaFullCalendar,
   BaMenuItem,
@@ -24,7 +24,7 @@ import {
   BaMsgCenter,
   BaMultiCheckbox,
   BaPageTop,
-  //BaPictureUploader,
+  BaPictureUploader,
   BaSidebar
 } from './components';
 
@@ -56,9 +56,9 @@ import {
 const NGA_COMPONENTS = [
  // BaAmChart,
   BaBackTop,
- // BaCard,
+  BaCard,
   //BaChartistChart,
- // BaCheckbox,
+  BaCheckbox,
   BaContentTop,
   //BaFullCalendar,
   BaMenuItem,
@@ -66,7 +66,7 @@ const NGA_COMPONENTS = [
   BaMsgCenter,
   BaMultiCheckbox,
   BaPageTop,
-  //BaPictureUploader,
+  BaPictureUploader,
   BaSidebar
 ];
 

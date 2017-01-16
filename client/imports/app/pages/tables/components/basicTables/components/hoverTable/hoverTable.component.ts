@@ -1,10 +1,10 @@
 import {Component} from '@angular/core';
-
+import template from './hoverTable.html';
 import {BasicTablesService} from '../../basicTables.service';
 
 @Component({
   selector: 'hover-table',
-  template: require('./hoverTable.html')
+  template
 })
 export class HoverTable {
 

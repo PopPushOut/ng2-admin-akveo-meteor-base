@@ -1,8 +1,9 @@
 import {Component, ViewChild, HostListener, Input, ElementRef} from '@angular/core';
-import { jQuery } from '../../../../../custom-typings';
+import style from './baBackTop.scss';
+
 @Component({
   selector: 'ba-back-top',
-  styles: [require('./baBackTop.scss')],
+  styles: [style],
   template: `
     <i #baBackTop class="fa fa-angle-up back-top ba-back-top" title="Back to Top"></i>
   `

@@ -1,9 +1,9 @@
 import {Component} from '@angular/core';
-
+import template from './raisedButtons.html';
 
 @Component({
   selector: 'raised-buttons',
-  template: require('./raisedButtons.html'),
+  template
 })
 export class RaisedButtons {
 

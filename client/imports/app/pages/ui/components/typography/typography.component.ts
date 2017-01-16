@@ -1,10 +1,10 @@
 import {Component, ViewEncapsulation} from '@angular/core';
-
+import template from './typography.html';
 
 @Component({
   selector: 'typography',
-  styles: [],
-  template: require('./typography.html'),
+  template,
+  styles: []
 })
 export class Typography {
 

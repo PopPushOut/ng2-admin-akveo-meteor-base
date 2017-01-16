@@ -1,1 +1,1 @@
-require('easy-pie-chart/dist/jquery.easypiechart.js');
+//require('easy-pie-chart/dist/jquery.easypiechart.js');

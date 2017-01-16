@@ -1,12 +1,12 @@
 import {Component, ViewEncapsulation} from '@angular/core';
-
+import template from './icons.html';
 import {IconsService} from './icons.service';
-
+import style from './icons.scss';
 @Component({
   selector: 'icons',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./icons.scss')],
-  template: require('./icons.html'),
+  styles: [style],
+  template
 })
 export class Icons {
 

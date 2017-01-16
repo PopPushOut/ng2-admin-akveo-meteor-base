@@ -1,1 +1,1 @@
-require('jquery-slimscroll');
+//require('jquery-slimscroll');

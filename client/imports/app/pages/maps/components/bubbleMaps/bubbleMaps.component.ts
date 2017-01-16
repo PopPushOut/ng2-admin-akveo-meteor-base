@@ -1,12 +1,13 @@
 import {Component, ViewEncapsulation} from '@angular/core';
 
 import {BubbleMapsService} from './bubbleMaps.service';
-
+import template from './bubbleMaps.html';
+import style from './bubbleMaps.scss';
 @Component({
   selector: 'bubble-maps',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./bubbleMaps.scss')],
-  template: require('./bubbleMaps.html'),
+  styles: [style],
+  template
 })
 export class BubbleMaps {
 

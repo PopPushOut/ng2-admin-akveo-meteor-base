@@ -1,9 +1,10 @@
 import {Component, ViewEncapsulation, ViewChild, Input} from '@angular/core';
-
+import style from './baCard.scss';
+import template from './baCard.html';
 @Component({
   selector: 'ba-card',
-  styles: [require('./baCard.scss')],
-  template: require('./baCard.html'),
+  styles: [style],
+  template,
   encapsulation: ViewEncapsulation.None
 })
 export class BaCard {

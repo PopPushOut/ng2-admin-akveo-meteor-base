@@ -97,7 +97,7 @@ export class UsersMapService {
         enabled: true
       },
       creditsPosition: 'bottom-right',
-      pathToImages: layoutPaths.images.amChart
+     // pathToImages: layoutPaths.images.amChart
     };
   }
 }

@@ -1,8 +1,9 @@
 import {Component} from '@angular/core';
+import template from './basicForm.html';
 
 @Component({
   selector: 'basic-form',
-  template: require('./basicForm.html'),
+  template
 })
 export class BasicForm {
 

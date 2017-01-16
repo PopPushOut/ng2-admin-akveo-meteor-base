@@ -5,7 +5,7 @@ import {BaCardBlurHelper} from './baCardBlurHelper.service';
 import {BgMetrics} from './bgMetrics';
 
 @Directive({
-  selector: '[baCardBlur]',
+  selector: 'baCardBlur',
   providers: [BaCardBlurHelper]
 })
 export class BaCardBlur {

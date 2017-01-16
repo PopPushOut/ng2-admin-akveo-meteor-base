@@ -1,15 +1,16 @@
 import {Component, ViewEncapsulation, Input, Output, EventEmitter} from '@angular/core';
 import {Router, Routes, NavigationEnd} from '@angular/router';
 import {Subscription} from 'rxjs/Rx';
-import { jQuery } from '../../../../../custom-typings';
+//import { jQuery } from 'jquery';
 import {BaMenuService} from './baMenu.service';
 import {GlobalState} from '../../../global.state';
-
+import style from './baMenu.scss';
+import template from './baMenu.html';
 @Component({
   selector: 'ba-menu',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./baMenu.scss')],
-  template: require('./baMenu.html'),
+  styles: [style],
+  template,
   providers: [BaMenuService]
 })
 export class BaMenu {

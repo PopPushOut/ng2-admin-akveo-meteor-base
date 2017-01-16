@@ -6,7 +6,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { routing } from './app.routing';
 
-import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
+//import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
+//import { ENV_PROVIDERS } from './environment'; //not sure if needed
 
 import { AppState, InternalStateType } from './app.service';
 import { GlobalState } from './global.state';
@@ -14,18 +15,17 @@ import { NgaModule } from './theme/nga.module';
 import { PagesModule } from './pages/pages.module';
 
 const APP_PROVIDERS = [
-  AppState,
+  //AppState,
   GlobalState
 ];
 
-type StoreType = {
+/*type StoreType = {
   state: InternalStateType,
   restoreInputValues: () => void,
   disposeOldHosts: () => void
-};
+};*/
 
 @NgModule({
-  bootstrap: [AppComponent],
   // Components, Pipes, Directive
   declarations: [
     AppComponent
@@ -49,12 +49,13 @@ type StoreType = {
     NgaModule.forRoot(),
     PagesModule,
     routing
-  ]
+  ],
+  bootstrap: [AppComponent]
 })
 export class AppModule {
-  constructor(public appRef: ApplicationRef, public appState: AppState) {
+  constructor() {
   }
-
+/*
   hmrOnInit(store: StoreType) {
     if (!store || !store.state) return;
     console.log('HMR store', JSON.stringify(store, null, 2));
@@ -87,5 +88,5 @@ export class AppModule {
     // display new elements
     store.disposeOldHosts();
     delete store.disposeOldHosts;
-  }
+  }*/
 }

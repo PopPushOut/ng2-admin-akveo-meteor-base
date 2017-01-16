@@ -270,7 +270,7 @@ export class LineMapsService {
       export: {
         'enabled': true
       },
-      pathToImages: layoutPaths.images.amMap
+     // pathToImages: layoutPaths.images.amMap
     };
   }
 }

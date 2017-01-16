@@ -112,7 +112,7 @@ export class LineChartService {
         backgroundAlpha: 0
       },
       zoomOutText: '',
-      pathToImages: layoutPaths.images.amChart
+      //pathToImages: layoutPaths.images.amChart
     };
   }
 }

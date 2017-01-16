@@ -1,10 +1,11 @@
 import {Component, ViewEncapsulation} from '@angular/core';
-
+import template from './grid.html';
+import style from './grid.scss';
 @Component({
   selector: 'grid',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./grid.scss')],
-  template: require('./grid.html'),
+  styles: [style],
+  template
 })
 export class Grid {
 

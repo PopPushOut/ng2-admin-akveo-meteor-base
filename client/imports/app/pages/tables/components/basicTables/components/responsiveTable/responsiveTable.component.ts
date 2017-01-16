@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
-
+import template from './responsiveTable.html';
 @Component({
   selector: 'responsive-table',
-  template: require('./responsiveTable.html'),
+  template
 })
 export class ResponsiveTable {
 

@@ -1,11 +1,13 @@
 import {Component} from '@angular/core';
-
 import {GlobalState} from '../../../global.state';
+
+import style from './baContentTop.scss';
+import template from './baContentTop.html';
 
 @Component({
   selector: 'ba-content-top',
-  styles: [require('./baContentTop.scss')],
-  template: require('./baContentTop.html'),
+  styles: [style],
+  template
 })
 export class BaContentTop {
 

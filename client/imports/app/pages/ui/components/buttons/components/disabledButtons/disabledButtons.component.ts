@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-
+import template from './disabledButtons.html';
 
 @Component({
   selector: 'disabled-buttons',
-  template: require('./disabledButtons.html'),
+  template
 })
 export class DisabledButtons {
 

@@ -1,8 +1,9 @@
 import {Component} from '@angular/core';
+import template from './largeButtons.html';
 
 @Component({
   selector: 'large-buttons',
-  template: require('./largeButtons.html'),
+  template
 })
 export class LargeButtons {
 

@@ -1,11 +1,12 @@
 import {Component, ViewEncapsulation} from '@angular/core';
-
 import {GlobalState} from '../../../global.state';
+import style from './baPageTop.scss';
+import template from './baPageTop.html';
 
 @Component({
   selector: 'ba-page-top',
-  styles: [require('./baPageTop.scss')],
-  template: require('./baPageTop.html'),
+  styles: [style],
+  template,
   encapsulation: ViewEncapsulation.None
 })
 export class BaPageTop {

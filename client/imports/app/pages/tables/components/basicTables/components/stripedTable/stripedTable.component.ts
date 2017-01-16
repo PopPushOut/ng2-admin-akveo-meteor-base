@@ -1,10 +1,10 @@
 import {Component} from '@angular/core';
-
+import template from './stripedTable.html';
 import {BasicTablesService} from '../../basicTables.service';
 
 @Component({
   selector: 'striped-table',
-  template: require('./stripedTable.html')
+  template
 })
 export class StripedTable {
 

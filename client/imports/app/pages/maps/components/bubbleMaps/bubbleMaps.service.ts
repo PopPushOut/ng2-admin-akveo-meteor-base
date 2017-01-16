@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {BaThemeConfigProvider, layoutPaths} from '../../../../theme';
-import { AmCharts } from '../../../../../../custom-typings';
+//import { AmCharts } from '../../../../../../custom-typings';
 @Injectable()
 export class BubbleMapsService {
 
@@ -496,7 +496,7 @@ export class BubbleMapsService {
       export: {
         enabled: true
       },
-      pathToImages: layoutPaths.images.amMap
+     // pathToImages: layoutPaths.images.amMap
     };
   }
 }

@@ -1,10 +1,11 @@
 import {Component, ViewEncapsulation} from '@angular/core';
+import template from './layouts.html';
 
 @Component({
   selector: 'layouts',
   encapsulation: ViewEncapsulation.None,
   styles: [],
-  template: require('./layouts.html'),
+  template
 })
 export class Layouts {
 

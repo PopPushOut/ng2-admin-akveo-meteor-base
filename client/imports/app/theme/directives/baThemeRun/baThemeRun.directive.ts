@@ -15,18 +15,18 @@ export class BaThemeRun {
 
   public ngOnInit():void {
     this._assignTheme();
-    this._assignMobile();
+    //this._assignMobile();
   }
 
   private _assignTheme():void {
     this._addClass(this._baConfig.get().theme.name);
   }
 
-  private _assignMobile():void {
+  /*private _assignMobile():void {
     if (isMobile()) {
       this._addClass('mobile');
     }
-  }
+  }*/
 
   private _addClass(cls:string) {
     this._classes.push(cls);

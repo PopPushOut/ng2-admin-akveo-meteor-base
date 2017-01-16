@@ -1,13 +1,15 @@
 import {Component, ViewChild, ViewEncapsulation, Input, Output, ElementRef, EventEmitter} from '@angular/core';
-import { AmCharts } from '../../../../../custom-typings';
+//import { AmCharts } from '../../../../../custom-typings';
 import {BaThemePreloader} from '../../../theme/services';
 
 import './baAmChart.loader.ts';
 import {BaAmChartThemeService} from './baAmChartTheme.service';
 
+import template from './baAmChart.html';
+
 @Component({
   selector: 'ba-am-chart',
-  template: require('./baAmChart.html'),
+  template,
   encapsulation: ViewEncapsulation.None,
   providers: [BaAmChartThemeService],
 })

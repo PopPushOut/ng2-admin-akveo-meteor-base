@@ -1,10 +1,12 @@
 import {Component, ViewChild, Input, Output, EventEmitter, ElementRef, Renderer} from '@angular/core';
 import {Ng2UploaderService} from 'ng2-uploader/ng2-uploader';
+import style from './baPictureUploader.scss';
+import template from './baPictureUploader.html';
 
 @Component({
   selector: 'ba-picture-uploader',
-  styles: [require('./baPictureUploader.scss')],
-  template: require('./baPictureUploader.html'),
+  styles: [style],
+  template,
   providers: [Ng2UploaderService]
 })
 export class BaPictureUploader {

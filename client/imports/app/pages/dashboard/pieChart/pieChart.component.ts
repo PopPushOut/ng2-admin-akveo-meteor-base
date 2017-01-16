@@ -1,14 +1,16 @@
 import {Component, ViewEncapsulation} from '@angular/core';
-import { jQuery } from '../../../../../custom-typings';
+//import { jQuery } from 'jquery';
 import {PieChartService} from './pieChart.service';
 
-import './pieChart.loader.ts';
+//import './pieChart.loader.ts';
 
+import style from './pieChart.scss';
+import template from './pieChart.html';
 @Component({
   selector: 'pie-chart',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./pieChart.scss')],
-  template: require('./pieChart.html')
+  styles: [style],
+  template
 })
 // TODO: move easypiechart to component
 export class PieChart {

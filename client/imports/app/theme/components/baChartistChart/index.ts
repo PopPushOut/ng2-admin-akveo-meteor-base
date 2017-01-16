@@ -1,1 +1,1 @@
-export * from './baChartistChart.component';
+//export * from './baChartistChart.component';

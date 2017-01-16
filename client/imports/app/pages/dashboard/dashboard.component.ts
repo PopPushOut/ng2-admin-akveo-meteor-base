@@ -1,10 +1,11 @@
 import {Component, ViewEncapsulation} from '@angular/core';
-
+import style from './dashboard.scss';
+import template from './dashboard.html';
 @Component({
   selector: 'dashboard',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./dashboard.scss')],
-  template: require('./dashboard.html')
+  styles: [style],
+  template
 })
 export class Dashboard {
 

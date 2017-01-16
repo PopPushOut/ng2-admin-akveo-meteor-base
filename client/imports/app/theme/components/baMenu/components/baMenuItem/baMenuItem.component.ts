@@ -1,10 +1,11 @@
 import {Component, ViewEncapsulation, Input, Output, EventEmitter} from '@angular/core';
-
+import style from './baMenuItem.scss';
+import template from './baMenuItem.html';
 @Component({
   selector: 'ba-menu-item',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./baMenuItem.scss')],
-  template: require('./baMenuItem.html')
+  styles: [style],
+  template
 })
 export class BaMenuItem {
 

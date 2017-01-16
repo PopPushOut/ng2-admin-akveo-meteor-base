@@ -1,8 +1,9 @@
 import {Component} from '@angular/core';
+import template from './iconButtons.html';
 
 @Component({
   selector: 'icon-buttons',
-  template: require('./iconButtons.html'),
+  template
 })
 export class IconButtons {
 

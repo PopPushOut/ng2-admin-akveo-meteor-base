@@ -2,13 +2,16 @@ import {Component, ElementRef, HostListener, ViewEncapsulation} from '@angular/c
 import {GlobalState} from '../../../global.state';
 import {layoutSizes} from '../../../theme';
 import {MENU} from '../../../../app/app.menu';
+import style from './baSidebar.scss';
+import template from './baSidebar.html';
+
 import * as _ from 'lodash';
 
 @Component({
   selector: 'ba-sidebar',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./baSidebar.scss')],
-  template: require('./baSidebar.html')
+  styles: [style],
+  template
 })
 export class BaSidebar {
 

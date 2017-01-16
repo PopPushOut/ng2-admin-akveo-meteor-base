@@ -1,10 +1,10 @@
 import {Component} from '@angular/core';
-
+import template from './condensedTable.html';
 import {BasicTablesService} from '../../basicTables.service';
 
 @Component({
   selector: 'condensed-table',
-  template: require('./condensedTable.html')
+  template
 })
 export class CondensedTable {
 

@@ -1,5 +1,5 @@
 import {Directive, Input, Output, ElementRef, EventEmitter} from '@angular/core';
-import { jQuery } from '../../../../../custom-typings';
+//import { jQuery } from 'jquery';
 import './baSlimScroll.loader.ts';
 
 @Directive({

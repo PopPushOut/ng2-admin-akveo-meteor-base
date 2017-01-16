@@ -1,12 +1,13 @@
 import {Component, ViewEncapsulation, ElementRef} from '@angular/core';
-import { L } from '../../../../../../custom-typings';
-import './leafletMaps.loader';
-
+//import { L } from '../../../../../../custom-typings';
+//import './leafletMaps.loader';
+import template from './leafletMaps.html';
+import style from './leafletMaps.scss';
 @Component({
   selector: 'leaflet-maps',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./leafletMaps.scss')],
-  template: require('./leafletMaps.html')
+  styles: [style],
+  template
 })
 export class LeafletMaps {
 
